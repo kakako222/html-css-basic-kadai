@@ -1,0 +1,33 @@
+
+html{
+    font-size: 20px;/*ルートフォントサイズ20px*/
+}
+body{
+    font-family: "Arial","Meiryo",sans-serif;
+    text-align: center; /*全てのテキストを中央寄せ*/
+}
+h1{
+   font-family: Josefin Sans;/*h1のフォント*/
+   font-size: 2rem;/*h1のサイズはルートの2倍*/
+   letter-spacing: 1.2em;/*h1の文字間1.2倍*/
+   text-shadow: 2px 2px 2px pink;/*h1の影*/
+   border-bottom: 3px solid rgb(115,115,114);/*h1の下線*/
+}
+.text-skyblue{
+    color: skyblue;
+}
+.text-pinkrgb{
+            color: rgb(255,192,203);/*PLOFILのP*/
+}
+#text-pink1{
+      color: pink;
+}
+#text-skyblue1{
+      color: skyblue;
+}
+#text-pink2{
+    color: pink;
+}
+#basic p strong{
+    font-weight: bold;
+}
