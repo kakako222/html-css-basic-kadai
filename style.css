@@ -7,27 +7,24 @@ body{
     text-align: center; /*全てのテキストを中央寄せ*/
 }
 h1{
-   font-family: Josefin Sans;/*h1のフォント*/
+   font-family: 'Josefin Sans', sans-serif;/*h1にgooglefontsを使用*/
    font-size: 2rem;/*h1のサイズはルートの2倍*/
    letter-spacing: 1.2em;/*h1の文字間1.2倍*/
    text-shadow: 2px 2px 2px pink;/*h1の影*/
    border-bottom: 3px solid rgb(115,115,114);/*h1の下線*/
 }
-.text-skyblue{
+.skyblue{
     color: skyblue;
 }
 .text-pinkrgb{
             color: rgb(255,192,203);/*PLOFILのP*/
 }
-#text-pink1{
-      color: pink;
-}
-#text-skyblue1{
+#skyblue{
       color: skyblue;
 }
-#text-pink2{
-    color: pink;
+#pink{
+    color: rgb(255,192,203);
 }
-#basic p strong{
-    font-weight: bold;
+#basic p {
+    font-weight: bold;/*basic内のpタグのstrong要素を太字に*/
 }
