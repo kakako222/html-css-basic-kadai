@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     h2 {
         font-size: 30px;
     }
@@ -13,9 +13,14 @@ body,h1,p{
     margin: 0;
     text-align: center;
 }
+header{
+    margin: 0px 0px 20px 0px;
+    background-color:  rgb(244, 79, 79);
+    text-align: center;
+}
 h1{
-    background-color: rgb(244, 79, 79);
-    margin-bottom: 20px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
 }
 p{
     font-size: 20px;
@@ -31,18 +36,20 @@ a:hover{
 color: rgb(245, 178, 168); /*マウスカーソルが乗った時の文字色*/
 }
 main{
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
 }
 .parent{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*均等な間隔で配置*/
     text-align: center;
+    align-items: center;
 }
 .content1, .content2, .content3{
     padding: 10px 15px;
-    margin: 20px 0px;
+    margin: 20px 10%;
     flex-basis: 25%;
     border: 3px solid rgb(238, 204, 204);
+    align-items: center;
 }
 h2{
     font-size: 25px;
@@ -62,6 +69,8 @@ h2::before{
 .content1, .content2, .content3, img{
     margin: 10px 0px;
     width: 70%;
+    max-width: 100%;
+    height: auto;
 }
 footer{
     background-color: rgb(244, 79, 79);
