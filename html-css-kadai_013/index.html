@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>課題013</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="自家焙煎コーヒーが買えるお店">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header>
+        <!--ロゴ-->
+        <a href="index.html" id="logo"><img src="images/logo.png" alt="トップページに戻る"></a>
+        <!--PC用ナビゲーション-->
+        <nav id="nav-pc">
+            <a href="concept.html#concept">
+                <h2>CONCEPT</h2>
+            </a><br>
+            <a href="product.html#product">
+                <h3>PRODUCT</h3>
+            </a><br>
+            <a href="concept.html#contact">
+                <h4>CONTACT</h4>
+            </a><br>
+        </nav>
+        <!-- スマホ用メニューボタン -->
+        <img id="nav-sp-button" src="images/button-menu.png" alt="ナビゲーションを開く"
+            onclick="document.getElementById('nav-sp').style.display = 'block'">
+        <!-- スマホ用ナビゲーション -->
+        <nav id="nav-sp">
+            <img id="close" src="images/button-close.png" alt="ナビゲーションを閉じる"
+                onclick="document.getElementById('nav-sp').style.display = 'none'">
+            <a href="index.html" id="logo-sp"><img src="images/logo-sp.png" alt="トップページに戻る"> </a>
+            <a class="menu" href="index.html#concept"
+                onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT </a>
+            <a class="menu" href="index.html#product"
+                onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT </a>
+            <a class="menu" href="index.html#contact"
+                onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT </a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <!--メインビジュアル-->
+            <section id="main-visual">
+                <div id="main-massage">
+                    <h1>Organic cafe</h1>
+                    <p>自家焙煎コーヒーが買えるお店</p>
+                </div>
+                <img src="images/main-image.jpg" alt="コーヒーの写真" class="main-image">
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
