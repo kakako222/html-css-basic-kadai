@@ -1,0 +1,156 @@
+/*PC,スマホ共通スタイル*/
+body {
+  font-family: Source Sans Pro, "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+p {
+  font-size: 15px;
+}
+
+/*================
+ PC用のスタイル 
+=================*/
+@media screen and (min-width: 375px) {
+  .main-image {
+    width: 1000px;
+    height: auto;
+  }
+
+  #nav-sp {
+    display: none;
+  }
+
+  #nav-sp-button {
+    display: none;
+  }
+
+  #nav-pc {
+    display: flex;
+  }
+
+  #nav-pc {
+    letter-spacing: 2px;
+    margin-right: 30px;
+    color: black;
+  }
+
+  h2 {
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: black;
+  }
+
+  h3 {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: darkblue;
+  }
+
+  h4 {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: #245624;
+
+  }
+
+  /* 横幅設定 */
+  body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto;
+  }
+
+  /*ヘッダー*/
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*================
+ スマホ用のスタイル 
+=================*/
+  @media screen and (max-width:767px) {
+
+    /*スマホ用のスタイルを指定する*/
+    .main-image {
+      width: 100%;
+      height: auto;
+    }
+
+    #nav-pc {
+      display: none;
+    }
+
+    #nav-sp-button {
+      display: block;
+    }
+
+    #nav-sp {
+      background-color: #ce933e;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 80%;
+      width: 50%;
+      display: none;
+      z-index: 100;
+    }
+
+    /*×ボタン*/
+    #close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    #logo-sp {
+      margin: 80px 0px 30px 20px;
+      align-items: center;
+      display: flex;
+    }
+
+    #logo-sp>a {
+      display: block;
+    }
+
+    #menu-sp {
+      float: right;
+      padding: 0;
+    }
+
+    #menu-up {
+      float: right;
+      margin: 20px;
+    }
+
+    #nav-sp>a:link {
+      color: #ffffff;
+    }
+
+    #nav-sp>a:visited {
+      color: #ffffff;
+    }
+
+    #nav-sp>a:hover {
+      text-decoration: underline;
+    }
+
+    #nav-sp>a:active {
+      color: #ffffff;
+    }
+
+    #nav-sp>.menu {
+      text-decoration: none;
+      display: block;
+      margin: 0px 20px 0px 20px;
+      height: 44px;
+      font-size: 16px;
+      background-image: url(images/arrow.png);
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+  }
+}
