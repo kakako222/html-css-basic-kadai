@@ -91,13 +91,12 @@ PC用のスタイル
     position: absolute;
     right: 0px;
     top: 0px;
-    z-index: 200;
   }
 
   #nav-sp {
     background-color: #ce933e;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     height: 80%;
     width: 50%;
@@ -108,8 +107,9 @@ PC用のスタイル
   /*×ボタン*/
   #close {
     position: absolute;
-    top: 20px;
+    top: 50px;
     right: 20px;
+    z-index: 200;
   }
 
   #logo-sp {
@@ -151,7 +151,7 @@ PC用のスタイル
   #nav-sp>.menu {
     text-decoration: none;
     display: block;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px;
     height: 44px;
     font-size: 16px;
     background-image: url(images/arrow.png);
