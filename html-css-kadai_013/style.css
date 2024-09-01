@@ -91,6 +91,7 @@ PC用のスタイル
     position: absolute;
     right: 0px;
     top: 0px;
+    z-index: 200;
   }
 
   #nav-sp {
@@ -109,7 +110,7 @@ PC用のスタイル
     position: absolute;
     top: 50px;
     right: 20px;
-    z-index: 200;
+    z-index: 100;
   }
 
   #logo-sp {
